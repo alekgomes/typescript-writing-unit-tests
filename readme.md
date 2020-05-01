@@ -4,10 +4,21 @@ Escrevendo testes com [Jest](https://jestjs.io/) e debugando no [VSCode](https:/
 
 Você pode abrir qualquer arquivo de teste e acionar `F5` ou executar a configuração `Jest Current File`.
 
-Ou, apenas, exeutar no terminal...
+Ou, apenas, executar no terminal...
 
     npm t
     npm run test
     npm run coverage
 
 ![](jest-running-terminal-coverage.png)
+
+
+### Update
+
+Do nada começou a apresnetar os seguinte erro...
+
+    error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner
+
+Para resolver bastou executar: `npm install jest @types/jest ts-jest`.
+
+https://stackoverflow.com/questions/56595053/cannot-find-name-it-in-jest-typescript
