@@ -13,6 +13,11 @@ Ou, apenas, executar no terminal...
 ![](jest-running-terminal-coverage.png)
 
 
+### Veja também
+
+https://github.com/microsoft/vscode-recipes/blob/master/debugging-jest-tests/.vscode/launch.json
+
+
 ### Update
 
 Do nada começou a apresentar os seguinte erro...
