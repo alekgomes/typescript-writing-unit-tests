@@ -18,6 +18,7 @@ Ou, apenas, executar no terminal...
 + https://github.com/microsoft/vscode-recipes/blob/master/debugging-jest-tests/.vscode/launch.json
 + https://github.com/jest-community/vscode-jest/blob/master/.vscode/launch.json
 
+
 ### Update 1
 
 Do nada começou a apresentar os seguinte erro...
