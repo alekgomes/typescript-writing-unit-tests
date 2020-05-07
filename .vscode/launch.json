@@ -9,9 +9,32 @@
       "request": "launch",
       "name": "Jest All",
       "program": "${workspaceFolder}/node_modules/.bin/jest",
-      "args": [
-        "--runInBand"
-      ],
+      "args": ["--runInBand"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+      }
+    },
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "Jest Current File",
+    //   "program": "${workspaceFolder}/node_modules/.bin/jest",
+    //   "args": ["${relativeFile}"],
+    //   "console": "integratedTerminal",
+    //   "internalConsoleOptions": "neverOpen",
+    //   "windows": {
+    //     "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+    //   }
+    // },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest Current File",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["${relativeFile}", "--config", "jest.config.js"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "disableOptimisticBPs": true,
@@ -22,33 +45,10 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Jest Current File",
-      "program": "${workspaceFolder}/node_modules/.bin/jest",
-      "args": [
-        "${relativeFile}"
-      ],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "windows": {
-        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
-      }
-    },
-    // {
-    //   "type": "node",
-    //   "request": "launch",
-    //   "name": "Jest Current File",
-    //   "program": "${workspaceFolder}/node_modules/.bin/jest",
-    //   "args": [
-    //     "${relativeFile}",
-    //     "--config",
-    //     "jest.config.js"
-    //   ],
-    //   "console": "integratedTerminal",
-    //   "internalConsoleOptions": "neverOpen",
-    //   "disableOptimisticBPs": true,
-    //   "windows": {
-    //     "program": "${workspaceFolder}/node_modules/jest/bin/jest",
-    //   }
-    // }
+      "name": "Jest Debug Current File",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "cwd": "${workspaceRoot}",
+      "args": [ "--i", "--config", "jest.config.js"]
+    }
   ]
 }

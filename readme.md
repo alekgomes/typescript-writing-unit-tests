@@ -15,10 +15,10 @@ Ou, apenas, executar no terminal...
 
 ### Veja também
 
-https://github.com/microsoft/vscode-recipes/blob/master/debugging-jest-tests/.vscode/launch.json
++ https://github.com/microsoft/vscode-recipes/blob/master/debugging-jest-tests/.vscode/launch.json
++ https://github.com/jest-community/vscode-jest/blob/master/.vscode/launch.json
 
-
-### Update
+### Update 1
 
 Do nada começou a apresentar os seguinte erro...
 
@@ -27,3 +27,13 @@ Do nada começou a apresentar os seguinte erro...
 Para resolver bastou executar: `npm install jest @types/jest ts-jest`.
 
 https://stackoverflow.com/questions/56595053/cannot-find-name-it-in-jest-typescript
+
+
+### Update 2
+
+Não se esqueça que temos o plugin recomendado pela comunidade Jest para VSCode.
+
+https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest
+
+Com ele é posspível utilizar o menu de contexto (botão direito do mouse) para acionar os scripts.
+
