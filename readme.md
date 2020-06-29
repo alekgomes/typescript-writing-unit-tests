@@ -39,3 +39,9 @@ https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest
 
 Com ele é posspível utilizar o menu de contexto (botão direito do mouse) para acionar os scripts.
 
+
+### Update 3
+
+No Windows não estava rodando o launch corretamente.
+
+Arrumei segundo https://stackoverflow.com/a/62622395

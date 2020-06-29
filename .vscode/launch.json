@@ -8,8 +8,10 @@
       "type": "node",
       "request": "launch",
       "name": "Jest All",
-//      "program": "${workspaceFolder}/node_modules/.bin/jest",
-      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+      },
       "args": ["--runInBand"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
@@ -32,13 +34,18 @@
       "request": "launch",
       "name": "Jest Current File",
       "program": "${workspaceFolder}/node_modules/.bin/jest",
-      "args": ["${relativeFile}", "--config", "jest.config.js"],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "disableOptimisticBPs": true,
       "windows": {
         "program": "${workspaceFolder}/node_modules/jest/bin/jest",
-      }
+      },
+      "args": [
+        "--runTestsByPath",   // This ensures the next line is treated as a path
+        "${relativeFile}",    // This path may contain backslashes on windows
+         "--config",
+         "jest.config.js"
+       ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true
     },
     {
       "type": "node",
@@ -46,7 +53,13 @@
       "name": "Jest Debug Current File",
       "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
       "cwd": "${workspaceRoot}",
-      "args": [ "--i", "--config", "jest.config.js"]
+      //"args": [ "--i", "--config", "jest.config.js"]
+      "args": [
+        "--runTestsByPath",   // This ensures the next line is treated as a path
+        "${relativeFile}",    // This path may contain backslashes on windows
+         "--config",
+         "jest.config.js"
+       ],      
     }
   ]
 }
