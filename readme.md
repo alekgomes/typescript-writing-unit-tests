@@ -10,7 +10,8 @@ Ou, apenas, executar no terminal...
     npm run test
     npm run coverage
 
-![](jest-running-terminal-coverage.png)
+![jest-running-terminal-coverage](https://user-images.githubusercontent.com/1257048/86014952-602f6180-b9f7-11ea-9d8b-be4a284cc8af.png)
+
 
 
 ### Veja também
