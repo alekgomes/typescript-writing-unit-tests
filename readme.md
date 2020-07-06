@@ -37,7 +37,7 @@ Não se esqueça que temos o plugin recomendado pela comunidade Jest para VSCode
 
 https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest
 
-Com ele é posspível utilizar o menu de contexto (botão direito do mouse) para acionar os scripts.
+Com ele é possível utilizar o menu de contexto (botão direito do mouse) para acionar os scripts.
 
 
 ### Update 3
@@ -45,3 +45,8 @@ Com ele é posspível utilizar o menu de contexto (botão direito do mouse) para
 No Windows não estava rodando o launch corretamente.
 
 Arrumei segundo https://stackoverflow.com/a/62622395
+
+
+### Todo
+
+Arrumar npm start e npm dev.
