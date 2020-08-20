@@ -46,7 +46,12 @@ No Windows não estava rodando o launch corretamente.
 
 Arrumei segundo https://stackoverflow.com/a/62622395
 
+### Update 4 
+Atualização dos scripts npm start e npm dev
+
+https://stackoverflow.com/questions/37979489/how-to-watch-and-reload-ts-node-when-typescript-files-change
+
 
 ### Todo
 
-Arrumar npm start e npm dev.
+Arrumar npm start e npm dev. [feito ?]
