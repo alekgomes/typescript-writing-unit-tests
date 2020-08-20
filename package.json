@@ -7,6 +7,7 @@
     "@types/jest": "^25.2.1",
     "jest": "^25.5.3",
     "ts-jest": "^25.4.0",
+    "ts-node": "^8.10.2",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
@@ -14,8 +15,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/main.js",
-    "dev": "nodemon --inspect dist/main.js",
+    "start": "ts-node ./dist/main.js",
+    "dev": "nodemon --watch '*/*.ts' --exec 'ts-node' ./main.ts",
     "test": "jest",
     "coverage": "jest --coverage"
   },
